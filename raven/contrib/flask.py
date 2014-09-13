@@ -198,6 +198,9 @@ class Sentry(object):
                  register_signal=None):
         if dsn is not None:
             self.dsn = dsn
+            
+        if logging is not None:
+            self.logging = logging
 
         if level is not None:
             self.level = level
